@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>lattatouille banner</title>
+    <style>
+        a.banner {
+            position: relative;
+            display: block;
+            width: 700px; height: 400px;
+            border: 1px solid #ccc;
+            background-image:
+                /*url(./latatouille.png),*/
+                url(./images/latatouille_bg3.gif);
+            background-repeat: no-repeat;
+            background-position: 0 0, right center;
+            background-size: 700px 400px, 110%;
+
+            color: #fff;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            text-shadow: 1px 1px 2px #333;
+            overflow: hidden;
+        }
+
+        .banner > .logo {
+            width: 366px; height: 100px;
+            position: absolute;
+            background: url(./images/logo.png);
+            top: 10px; right: -10px;
+            /* animation */
+            animation-name: logo;
+            animation-duration: 10.7s;
+            animation-timing-function: ease-in-out;
+            animation-iteration-count: infinite;
+        }
+
+        /* logo 키프레임 */
+         @keyframes logo {
+            0%{ right: -765px;}
+            9%{ right: 10px;}
+            10%{right: -10px;}
+            100%{} 
+        } 
+        .banner > strong {
+            position: absolute;
+            right: 20px;bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <a 
+    href="https://www.imdb.com/title/tt0382932/?ref_=nv_sr_srsg_0"
+    class="banner">
+    <div class="logo"></div>
+    <strong>disney.com/latatouille</strong>
+    </a>
+</body>
+</html>
